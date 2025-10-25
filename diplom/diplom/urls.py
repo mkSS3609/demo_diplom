@@ -4,7 +4,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from rest_framework.routers import DefaultRouter
 
-from diplom.posts.views import PostViewSet # пиздц какой-то -- ModuleNotFoundError: No module named 'diplom.posts' (типо какого хуя)
+from diplom.posts.views import PostViewSet #  ModuleNotFoundError: No module named 'diplom.posts'
 
 router = DefaultRouter()
 router.register('posts', PostViewSet)
